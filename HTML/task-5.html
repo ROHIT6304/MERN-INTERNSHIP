@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-5</title>
+</head>
+<body>
+<center><h1 style="color:blue">Registration form</h1></center>
+    <form action="/register" method="post">
+        <center><table border="3" >
+            <tr>
+                <td><label for="fname">First Name: </label> </td>
+                <td><input type="text" name="fname" id="fname"  ></td>
+                </tr>
+                <tr>
+                    <td><label for="lname">Lasst Name: </label> </td>
+                    <td><input type="text" name="lname" id="lname"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email: </label> </td>
+                    <td><input type="email" name="email" id="email" ></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password: </label> </td>
+                    <td><input type="password" name="password" id="password" ></td>
+                </tr>
+                <tr>
+                    <td><label for="re-enter password">Re-Enter Password:</label></td>
+                    <td><input type="password" name="password" id="re-enter password" ></td>
+                </tr>
+                <tr>
+                    <td rowspan="2" style="text-align: center;">Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" value="male">Male
+                    </td>
+                        <tr>
+                            <td>
+                        <input type="radio" name="gender" value="female">Female
+                        </td>
+                        </tr>
+            </tr>
+            <tr>
+                <td><label for=age>Age: </label> </td>
+                <td><input type="number" name="Age" id="age"></td>
+            </tr>
+            <tr>
+                <td><label for="number">Phone number: </label> </td>
+                <td><input type="tel" name="Phone number" id="number"></td>
+            </tr>
+            <tr >
+                <td ><label for="address">Address: </label> </td>
+                <td ><textarea name="address" rows="4" id="address"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="State">State: </label> </td>
+                <td><input type="text" name="State" id="State" ></td>
+            </tr>
+            <tr>
+                <td><label for="Country">Country: </label> </td>
+                <td><select id="Country" name="country">
+                    <option value="choose your country">Choose your country</option>
+                    <option value="INDIA">INDIA</option>
+                    <option value="AMERICA">AMERICA</option>
+                    <option value="NONE OF THE ABOVE">NONE OF THE ABOVE</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">Languages known:</td>
+                <td>English<input type="checkbox"  >
+                Kannada<input type="checkbox"  >
+                Hindi<input type="checkbox"  >
+                Telugu<input type="checkbox"  ></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox" >Hereby I declare all the given details are true</td>
+            </tr>
+        <tr>
+            <td colspan="2"  style="padding-left: 400px;">Login into the<a href="https://ethnus.com" target="_blank">Ethnus</a>website</td>
+        </tr>
+    </table>
+</center>
+    <center><input type="submit" value="Register" style="width: 100px;"></center>
+    </form>
+</body>
+</html>

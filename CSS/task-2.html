@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK-2</title>
+    <style>       
+        .c{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            margin-top: 100px;
+            text-align: left;
+        }
+        .d{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+        .ver{
+            width: 400px;
+            font-size: 40px;
+            margin-left: 100px;
+        }
+        .full{
+            display: grid;
+            grid-template-columns: 700px 1fr;
+        }
+        ul{
+            list-style-type: none;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-bottom: 0px;
+        }
+        a{
+           text-decoration: none;
+        }
+        .hor{
+            display:inline;
+            font-size: 40px;
+            width: 500px;
+            margin-top: 200px;
+        }
+        .v,.h{
+            border-style: solid;
+        }
+        .h{
+            padding: 10px;
+            display: inline-block;
+        }
+        .ul{
+        display: flex;
+        padding: 0px;
+        list-style: none;
+        margin: 0px 0px;
+        border-style: none;
+        background-color: rgb(234, 241, 244);
+       }
+       li{
+        border-style: none;
+       }
+       .li{
+        border-style: solid;
+        border-width: 1px;
+        padding: 3px;
+       }
+    </style>
+</head>
+<body>
+    <div class="full">
+    <div class="ver">
+        <p class="c">Vertical Navigation Bar</p>
+        <nav class="v">
+            <ul>
+                <li style="background-color: orange;">Home</li>
+                <li style="background-color: lightblue;"><a href="#">Java</a></li>
+                <li style="background-color: lightblue;"><a href="#">CSS</a></li>
+                <li style="background-color: lightblue;"><a href="#">HTML</a></li>
+                <li style="background-color: lightblue;"><a href="#">Bootstrap</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="hor">
+        <p class="d">Horizontal Navigation Bar</p>
+        <nav class="h">
+        <ul class="ul">
+            <li class="li">Home</li>
+            <li class="li"><a href="#">Java</a></li>
+            <li class="li"><a href="#">CSS</a></li>
+            <li class="li"><a href="#">Html</a></li>
+            <li class="li"><a href="#">Bootstrap</a></li>
+        </ul>
+        </nav>
+    </div>
+</div>
+</body>
+</html>

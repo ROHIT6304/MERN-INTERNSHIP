@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK-4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        
+        .button{
+            width: 100px;
+            display: inline-block;
+        }
+        .full{
+            display: grid;
+            grid-template-columns: 70px 1fr;
+            border-style: solid;
+            margin-left: 300px;
+            margin-top: 100px;
+            padding-bottom: 200px;
+            margin-right: 600px;
+            margin-bottom: 150px;
+        }
+        .p{
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .e,.d,.h,.c{
+            height: 50px;
+            width: 50px;
+            margin-bottom: 15px;
+            border-top-right-radius: 7px;
+            border-bottom-right-radius:7px ;
+        }
+        .e #e:hover,.d #d:hover,.h #h:hover,.c #c:hover{
+            opacity: 1;
+        }
+        .e #e,.d #d,.h #h,.c #c{
+            opacity: 0;
+        }
+        .e{
+            background-color:green;
+        }
+        .d{
+            background-color:blue;
+        }
+        .h{
+            background-color:red;
+        }
+        .c{
+            background-color:gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="full">
+    <div class="button">
+        <nav>
+                <div class="e"><div id="e"><button style="font-size: 24px;"><i class="fa fa-envelope"></i></button></div></div>
+                <div class="d"><div id="d"><button style="font-size:24px"><i class="fa fa-download"></i></button></div></div>
+                <div class="h"><div id="h"><button style="font-size:24px"><i class="fa fa-home"></i></button></div></div>
+                <div class="c"><div id="c"><button style="font-size:24px"><i class="fa fa-calendar"></i></button></div></div>
+        </nav>
+    </div>
+    <div class="text">
+        <p class="p">Hoverable Sidenav Buttons</p>
+        <p style="font-size: 20px;">Hover over the buttons in the left side navigation to open them</p>
+    </div>
+</div>
+</body>
+</html>
